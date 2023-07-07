@@ -18,7 +18,7 @@ export const Login = () => {
         
         dispatch(LogIn(user))
         .then(()=>{
-            navigate("/home")
+            navigate("/")
         })
 
     }

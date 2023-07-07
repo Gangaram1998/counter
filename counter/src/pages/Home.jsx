@@ -19,7 +19,7 @@ export const Home = () => {
         setTotalC([...arr])
     }
     if(!isAuth){
-        <Navigate to={'/login'}/>
+        return <Navigate to={'/login'}/>
     }
   return (
     <div>

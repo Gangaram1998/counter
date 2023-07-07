@@ -20,7 +20,7 @@ export const Signup = () => {
         }
         dispatch(SignUp(user))
         .then(()=>{
-            navigate("/")
+            navigate("/login")
         })
 
     }
@@ -30,7 +30,7 @@ export const Signup = () => {
         <input type="email" placeholder='Email' onChange={(e)=>setUser({...user,email:e.target.value})} /><br/>
         <input type="password" placeholder='Password' onChange={(e)=>setUser({...user,password:e.target.value})}/><br/>
         <button onClick={handleClick}>Sign Up</button>
-        <Link to={"/"}>Log in</Link>
+        <Link to={"/login"}>Log in</Link>
     </div>
 
     //something to add 
